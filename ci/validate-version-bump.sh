@@ -20,3 +20,4 @@ echo "Base branch  is $base_sha"
 echo "Current head is $head_sha"
 
 cargo bump-check --baseline-rev "$base_sha" --head-rev "$head_sha"
+cargo semver-checks --workspace --baseline-rev "$base_sha"
